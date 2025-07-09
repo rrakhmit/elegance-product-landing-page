@@ -1,29 +1,13 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { 
-  Star, 
-  Shield, 
-  Truck, 
-  Clock, 
-  CheckCircle, 
-  Users, 
-  Award,
-  Sparkles,
-  Heart,
-  Zap,
-  Timer,
-  ShoppingBag,
-  X
-} from "lucide-react";
+import { Timer, ShoppingBag } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import BenefitsSection from "@/components/BenefitsSection";
-import ProductShowcase from "@/components/ProductShowcase";
+import VideoSection from "@/components/VideoSection";
+import ProductDisplay from "@/components/ProductDisplay";
+import ImageTextSection from "@/components/ImageTextSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import CheckoutModal from "@/components/CheckoutModal";
 import TrustBadges from "@/components/TrustBadges";
@@ -44,9 +28,10 @@ const Index = () => {
 
       <HeroSection onBuyClick={() => setIsCheckoutOpen(true)} />
       <BenefitsSection />
-      <ProductShowcase />
+      <VideoSection />
+      <ProductDisplay onBuyClick={() => setIsCheckoutOpen(true)} />
+      <ImageTextSection />
       <TestimonialsSection />
-      <PricingSection onBuyClick={() => setIsCheckoutOpen(true)} />
       <FAQSection />
       <TrustBadges />
       
@@ -66,7 +51,7 @@ const Index = () => {
             onClick={() => setIsCheckoutOpen(true)}
           >
             <ShoppingBag className="mr-2 h-5 w-5" />
-            Get My Skincare Bundle Now
+            Get Your Facewash Now
           </Button>
         </div>
       </section>

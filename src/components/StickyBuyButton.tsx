@@ -35,8 +35,8 @@ const StickyBuyButton = ({ onBuyClick }: StickyBuyButtonProps) => {
               Limited Time: 40% OFF
             </div>
             <div className="text-lg font-bold text-gray-900">
-              Complete Bundle - $89
-              <span className="text-sm text-gray-400 line-through ml-2">$169</span>
+              Gentle Facewash - $29
+              <span className="text-sm text-gray-400 line-through ml-2">$49</span>
             </div>
           </div>
           
