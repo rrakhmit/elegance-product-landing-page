@@ -27,9 +27,9 @@ const Index = () => {
       </div>
 
       <HeroSection onBuyClick={() => setIsCheckoutOpen(true)} />
+      <ProductDisplay onBuyClick={() => setIsCheckoutOpen(true)} />
       <BenefitsSection />
       <VideoSection />
-      <ProductDisplay onBuyClick={() => setIsCheckoutOpen(true)} />
       <ImageTextSection />
       <TestimonialsSection />
       <FAQSection />

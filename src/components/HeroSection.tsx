@@ -60,19 +60,6 @@ const HeroSection = ({ onBuyClick }: HeroSectionProps) => {
           </Button>
         </div>
         
-        {/* Hero Image Placeholder */}
-        <div className="relative max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-rose-200 to-pink-200 rounded-2xl p-8 shadow-2xl">
-            <div className="aspect-video bg-white rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <Sparkles className="h-16 w-16 text-rose-500 mx-auto mb-4" />
-                <p className="text-gray-600 font-medium">Before & After Results</p>
-                <p className="text-sm text-gray-500">30-Day Transformation</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
         {/* Trust Indicators */}
         <div className="flex flex-wrap justify-center items-center gap-8 mt-12 text-sm text-gray-500">
           <div className="flex items-center gap-2">
