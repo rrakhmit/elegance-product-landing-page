@@ -1,24 +1,654 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>radiant-touch-ecommerce</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant Skin - Premium Facewash</title>
+    <meta name="description" content="Transform your skin in just 30 days with our clinically-proven skincare routine. Natural ingredients, visible results, guaranteed.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rose: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            800: '#9f1239',
+                            900: '#881337'
+                        },
+                        pink: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f9a8d4',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                            800: '#9d174d',
+                            900: '#831843'
+                        }
+                    },
+                    animation: {
+                        'slide-in-right': 'slideInRight 0.3s ease-out',
+                        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    },
+                    keyframes: {
+                        slideInRight: {
+                            '0%': { transform: 'translateX(100%)' },
+                            '100%': { transform: 'translateX(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 50%, #fef7cd 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f43f5e, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-button {
+            background: linear-gradient(135deg, #f43f5e, #ec4899);
+        }
+        .gradient-button:hover {
+            background: linear-gradient(135deg, #e11d48, #db2777);
+        }
+        .star-filled {
+            color: #fbbf24;
+            fill: #fbbf24;
+        }
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+<body class="min-h-screen gradient-bg">
+    <!-- Limited Time Banner -->
+    <div class="bg-gradient-to-r from-rose-500 to-pink-500 text-white py-2 px-4 text-center animate-pulse">
+        <div class="flex items-center justify-center gap-2 text-sm font-medium">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12,6 12,12 16,14"/>
+            </svg>
+            LIMITED TIME: 40% OFF + FREE SHIPPING - Ends in 24:00:00
+        </div>
+    </div>
 
-    <meta property="og:title" content="radiant-touch-ecommerce" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section class="py-20 px-4 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-rose-100/50 to-pink-100/50 -z-10"></div>
+        
+        <div class="container mx-auto max-w-6xl">
+            <div class="mb-6 inline-flex items-center bg-gradient-to-r from-rose-500 to-pink-500 text-white px-4 py-2 text-sm font-medium rounded-full">
+                <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                </svg>
+                #1 Skincare Brand 2024
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-6 leading-tight">
+                Radiant Skin
+                <br />
+                <span class="gradient-text">Starts Here</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Transform your skin in just 30 days with our clinically-proven skincare routine. 
+                Natural ingredients, visible results, guaranteed.
+            </p>
+            
+            <!-- Social Proof -->
+            <div class="flex items-center justify-center gap-2 mb-8">
+                <div class="flex">
+                    <svg class="h-5 w-5 star-filled" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg class="h-5 w-5 star-filled" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg class="h-5 w-5 star-filled" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg class="h-5 w-5 star-filled" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg class="h-5 w-5 star-filled" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                </div>
+                <span class="text-gray-600 font-medium">4.9/5 from 12,847+ happy customers</span>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <button id="hero-buy-btn" class="gradient-button hover:shadow-lg text-white px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200 shadow-lg rounded-md inline-flex items-center">
+                    <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                    </svg>
+                    Shop Now - 40% OFF
+                </button>
+                
+                <button class="border-2 border-gray-300 hover:border-rose-500 hover:text-rose-500 px-8 py-4 text-lg font-semibold transition-all duration-200 rounded-md">
+                    Watch Demo Video
+                </button>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="flex flex-wrap justify-center items-center gap-8 mt-12 text-sm text-gray-500">
+                <div class="flex items-center gap-2">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                    </svg>
+                    <span>50K+ Happy Customers</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <span>Dermatologist Approved</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                    </svg>
+                    <span>Natural Ingredients</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Product Display Section -->
+    <section class="py-20 px-4 bg-gradient-to-br from-gray-50 to-rose-50">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Introducing Our Premium Facewash
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience the perfect balance of deep cleansing and gentle care with our 
+                    dermatologist-approved formula.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white shadow-2xl hover:shadow-3xl transition-all duration-300 rounded-lg">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <!-- Product Images -->
+                    <div class="relative bg-gradient-to-br from-rose-100 to-pink-100 p-8 lg:p-12 rounded-l-lg">
+                        <div class="absolute top-4 left-4 bg-gradient-to-r from-rose-500 to-pink-500 text-white px-3 py-1 rounded-full text-sm">
+                            Best Seller
+                        </div>
+                        
+                        <!-- Main Product Image -->
+                        <div class="text-center mb-6">
+                            <div class="text-8xl mb-4">🧴</div>
+                            <div class="flex items-center justify-center gap-1 mb-2">
+                                <div class="flex">
+                                    <svg class="h-4 w-4 star-filled" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg class="h-4 w-4 star-filled" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg class="h-4 w-4 star-filled" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg class="h-4 w-4 star-filled" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg class="h-4 w-4 star-filled" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                </div>
+                                <span class="text-sm text-gray-600 ml-1">4.9 (2,847 reviews)</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Gallery -->
+                        <div class="flex justify-center gap-4">
+                            <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center text-2xl shadow-md">🧴</div>
+                            <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center text-2xl shadow-md">📦</div>
+                            <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center text-2xl shadow-md">✨</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product Details -->
+                    <div class="p-8 lg:p-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">
+                            Gentle Deep Cleansing Facewash
+                        </h3>
+                        
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Our premium facewash combines natural ingredients with advanced skincare science 
+                            to deliver a deep cleanse that removes impurities, excess oil, and makeup while 
+                            maintaining your skin's natural moisture barrier. Suitable for all skin types.
+                        </p>
+                        
+                        <!-- Key Features -->
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start gap-3">
+                                <svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-gray-700">Removes dirt, oil, and makeup effectively</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-gray-700">pH-balanced formula for all skin types</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-gray-700">Infused with natural botanical extracts</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-gray-700">Dermatologist tested and approved</span>
+                            </li>
+                        </ul>
+                        
+                        <!-- Pricing -->
+                        <div class="mb-8">
+                            <div class="flex items-center gap-4 mb-2">
+                                <span class="text-4xl font-bold text-rose-500">$29</span>
+                                <span class="text-xl text-gray-400 line-through">$49</span>
+                                <div class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Save 40%</div>
+                            </div>
+                            <p class="text-sm text-gray-600">
+                                150ml bottle • Free shipping • 30-day money-back guarantee
+                            </p>
+                        </div>
+                        
+                        <!-- Buy Button -->
+                        <button id="product-buy-btn" class="w-full gradient-button text-white py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200 rounded-md inline-flex items-center justify-center">
+                            <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                            </svg>
+                            Buy Now - Limited Time Offer
+                        </button>
+                        
+                        <p class="text-center text-sm text-gray-500 mt-4">
+                            🔒 Secure checkout • 💳 Pay with card or PayPal
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Benefits Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Why Choose Our Skincare?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover the key benefits that make our skincare routine the perfect choice 
+                    for achieving your dream skin.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="hover:shadow-lg transition-shadow duration-300 border-0 bg-gradient-to-br from-gray-50 to-rose-50/30 rounded-lg p-8 text-center">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-3 bg-white rounded-full shadow-md">
+                            <svg class="h-8 w-8 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Visible Results in 7 Days</h3>
+                    <p class="text-gray-600 leading-relaxed">See clearer, brighter skin in just one week with our fast-acting formula.</p>
+                </div>
+                
+                <div class="hover:shadow-lg transition-shadow duration-300 border-0 bg-gradient-to-br from-gray-50 to-rose-50/30 rounded-lg p-8 text-center">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-3 bg-white rounded-full shadow-md">
+                            <svg class="h-8 w-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">100% Natural Ingredients</h3>
+                    <p class="text-gray-600 leading-relaxed">Carefully selected botanicals and vitamins that love your skin as much as you do.</p>
+                </div>
+                
+                <div class="hover:shadow-lg transition-shadow duration-300 border-0 bg-gradient-to-br from-gray-50 to-rose-50/30 rounded-lg p-8 text-center">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-3 bg-white rounded-full shadow-md">
+                            <svg class="h-8 w-8 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Anti-Aging Power</h3>
+                    <p class="text-gray-600 leading-relaxed">Reduce fine lines and boost collagen production for youthful, radiant skin.</p>
+                </div>
+                
+                <div class="hover:shadow-lg transition-shadow duration-300 border-0 bg-gradient-to-br from-gray-50 to-rose-50/30 rounded-lg p-8 text-center">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-3 bg-white rounded-full shadow-md">
+                            <svg class="h-8 w-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-3.691a9 9 0 11-4.536 4.536"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Dermatologist Tested</h3>
+                    <p class="text-gray-600 leading-relaxed">Clinically proven safe for all skin types, including sensitive skin.</p>
+                </div>
+                
+                <div class="hover:shadow-lg transition-shadow duration-300 border-0 bg-gradient-to-br from-gray-50 to-rose-50/30 rounded-lg p-8 text-center">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-3 bg-white rounded-full shadow-md">
+                            <svg class="h-8 w-8 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">5-Minute Daily Routine</h3>
+                    <p class="text-gray-600 leading-relaxed">Simple, effective skincare that fits perfectly into your busy lifestyle.</p>
+                </div>
+                
+                <div class="hover:shadow-lg transition-shadow duration-300 border-0 bg-gradient-to-br from-gray-50 to-rose-50/30 rounded-lg p-8 text-center">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-3 bg-white rounded-full shadow-md">
+                            <svg class="h-8 w-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Award-Winning Formula</h3>
+                    <p class="text-gray-600 leading-relaxed">Winner of 'Best Skincare Innovation 2024' by Beauty Awards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    See How Our Facewash Works
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Watch our demonstration video to see the gentle yet effective cleansing action 
+                    that removes impurities while keeping your skin moisturized and radiant.
+                </p>
+            </div>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <div class="relative bg-gradient-to-br from-rose-200 to-pink-200 rounded-2xl p-8 shadow-2xl">
+                    <div class="aspect-video bg-gray-900 rounded-lg flex items-center justify-center relative overflow-hidden">
+                        <!-- Video Placeholder -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900"></div>
+                        
+                        <!-- Play Button -->
+                        <button class="relative z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white border-2 border-white/50 rounded-full w-20 h-20 p-0 flex items-center justify-center">
+                            <svg class="h-8 w-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                <polygon points="5,3 19,12 5,21"/>
+                            </svg>
+                        </button>
+                        
+                        <!-- Video Info Overlay -->
+                        <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
+                            <div class="flex items-center gap-2">
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                                </svg>
+                                <span class="text-sm">Sound On</span>
+                            </div>
+                            <div class="text-sm">2:30</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video Features -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                    <div class="text-center">
+                        <div class="bg-rose-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🧴</span>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Gentle Formula</h3>
+                        <p class="text-gray-600 text-sm">See how our pH-balanced formula cleanses without stripping natural oils</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">✨</span>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Deep Cleansing</h3>
+                        <p class="text-gray-600 text-sm">Watch impurities dissolve while maintaining skin's natural moisture</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-rose-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">💧</span>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Hydrating Finish</h3>
+                        <p class="text-gray-600 text-sm">Notice how skin feels soft and hydrated, never tight or dry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Text Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    The Science Behind Beautiful Skin
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover how our carefully selected ingredients work together to give you 
+                    the healthiest, most radiant skin you've ever had.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <!-- Image -->
+                <div class="order-2 lg:order-1">
+                    <div class="relative bg-gradient-to-br from-rose-200 to-pink-200 rounded-2xl p-8 shadow-lg">
+                        <div class="aspect-square bg-white rounded-lg flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-6xl mb-4">🌸</div>
+                                <p class="text-gray-600 font-medium">Natural Ingredients</p>
+                                <p class="text-sm text-gray-500">Gentle on your skin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text Content -->
+                <div class="order-1 lg:order-2">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">
+                        Pure Ingredients, Proven Results
+                    </h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Our facewash is formulated with a blend of natural botanicals and scientifically-proven 
+                        ingredients that work synergistically to cleanse, nourish, and protect your skin. 
+                        Each ingredient is carefully selected for its specific benefits and gentle action.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-rose-100 p-3 rounded-full flex-shrink-0">
+                                <svg class="h-6 w-6 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Natural Botanical Extracts</h4>
+                                <p class="text-gray-600">Chamomile and aloe vera soothe and calm irritated skin while providing natural moisture.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="bg-pink-100 p-3 rounded-full flex-shrink-0">
+                                <svg class="h-6 w-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Advanced Cleansing Complex</h4>
+                                <p class="text-gray-600">Gentle surfactants effectively remove impurities without disrupting your skin's natural barrier.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="bg-rose-100 p-3 rounded-full flex-shrink-0">
+                                <svg class="h-6 w-6 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Hydrating Ingredients</h4>
+                                <p class="text-gray-600">Hyaluronic acid and glycerin help maintain optimal skin hydration levels throughout the day.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Info Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-rose-50 to-pink-50 border-0 rounded-lg p-6 text-center">
+                    <div class="text-3xl mb-4">🔬</div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Clinically Tested</h4>
+                    <p class="text-gray-600 text-sm">Dermatologist tested and proven safe for sensitive skin</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-rose-50 to-pink-50 border-0 rounded-lg p-6 text-center">
+                    <div class="text-3xl mb-4">🌿</div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Cruelty-Free</h4>
+                    <p class="text-gray-600 text-sm">Never tested on animals and made with sustainable practices</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-rose-50 to-pink-50 border-0 rounded-lg p-6 text-center">
+                    <div class="text-3xl mb-4">✨</div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Visible Results</h4>
+                    <p class="text-gray-600 text-sm">Notice clearer, smoother skin in just 7 days of use</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-rose-100 to-pink-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Ready to Transform Your Skin?
+            </h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                Join thousands of happy customers who've discovered their best skin yet. 
+                30-day money-back guarantee included.
+            </p>
+            <button id="final-buy-btn" class="gradient-button text-white px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200 rounded-md inline-flex items-center">
+                <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                </svg>
+                Get Your Facewash Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Sticky Buy Button -->
+    <div id="sticky-buy-button" class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-50 p-4 animate-slide-in-right hide">
+        <div class="container mx-auto max-w-md">
+            <div class="flex items-center justify-between gap-4">
+                <div class="flex-1">
+                    <div class="flex items-center gap-2 text-sm text-rose-500 font-medium mb-1">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                        Limited Time: 40% OFF
+                    </div>
+                    <div class="text-lg font-bold text-gray-900">
+                        Gentle Facewash - $29
+                        <span class="text-sm text-gray-400 line-through ml-2">$49</span>
+                    </div>
+                </div>
+                
+                <button id="sticky-buy-btn" class="gradient-button text-white font-semibold px-6 py-3 transform hover:scale-105 transition-all duration-200 rounded-md inline-flex items-center">
+                    <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                    </svg>
+                    Buy Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Modal/Alert -->
+    <div id="purchase-alert" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hide">
+        <div class="bg-white p-8 rounded-lg max-w-md mx-4 text-center">
+            <div class="text-4xl mb-4">🎉</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Thank You!</h3>
+            <p class="text-gray-600 mb-6">Your order has been received. You'll get a confirmation email shortly!</p>
+            <button id="close-alert" class="gradient-button text-white px-6 py-2 rounded-md">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Sticky button visibility on scroll
+        function handleStickyButton() {
+            const stickyButton = document.getElementById('sticky-buy-button');
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            
+            if (scrollPosition > windowHeight * 0.5) {
+                stickyButton.classList.remove('hide');
+            } else {
+                stickyButton.classList.add('hide');
+            }
+        }
+
+        // Purchase alert functionality
+        function showPurchaseAlert() {
+            document.getElementById('purchase-alert').classList.remove('hide');
+        }
+
+        function closePurchaseAlert() {
+            document.getElementById('purchase-alert').classList.add('hide');
+        }
+
+        // Event listeners
+        window.addEventListener('scroll', handleStickyButton);
+
+        // Buy button event listeners
+        document.getElementById('hero-buy-btn').addEventListener('click', showPurchaseAlert);
+        document.getElementById('product-buy-btn').addEventListener('click', showPurchaseAlert);
+        document.getElementById('final-buy-btn').addEventListener('click', showPurchaseAlert);
+        document.getElementById('sticky-buy-btn').addEventListener('click', showPurchaseAlert);
+
+        // Close alert
+        document.getElementById('close-alert').addEventListener('click', closePurchaseAlert);
+
+        // Close modal when clicking outside
+        document.getElementById('purchase-alert').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePurchaseAlert();
+            }
+        });
+
+        // Smooth scroll for any internal links (if added later)
+        document.addEventListener('click', function(e) {
+            if (e.target.matches('a[href^="#"]')) {
+                e.preventDefault();
+                const target = document.querySelector(e.target.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+
+        // Initialize sticky button state
+        handleStickyButton();
+    </script>
+</body>
 </html>
